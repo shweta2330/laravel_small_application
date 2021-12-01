@@ -11,6 +11,8 @@
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Dashboard</h1>
+
+            <h6><a href="{{url('export-excel-csv-file')}}"> Export</a></h6>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -43,7 +45,7 @@
                     
                 
                 <tr>
-                  <td>{{$i++}}}</td>
+                  <td>{{$i++}}</td>
                   <td><img src="{{ asset('uploads/' . $item->image) }}" width="50px"  height=""/></td>
                   <td>
                     {{$item->name}}

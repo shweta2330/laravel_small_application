@@ -24,8 +24,14 @@ Route::get('/dashboard', function () {
 
 
 Route::get('add-product', [ProductController::class, 'index']);
+Route::get('contact', [ProductController::class, 'contact']);
+
 Route::post('submit-product', [ProductController::class, 'store']);
+
 Route::get('product-table', [ProductController::class, 'show']);
+Route::post('con-submit', [ProductController::class, 'contacsubmit']);
+
+Route::get('export-excel-csv-file', [ProductController::class, 'exportExcelCSV']);
 
 
 require __DIR__.'/auth.php';
