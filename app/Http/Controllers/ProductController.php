@@ -71,9 +71,7 @@ class ProductController extends Controller
 
 
     public function contacsubmit(Request $request) {
-        //echo "jhhd";die;
-        //print_r($request);die;
-        //dd($request);
+       
         $data =['ss'];
         $to ="shwetajaiswal7512@gmail.com";
         $title = "test";
